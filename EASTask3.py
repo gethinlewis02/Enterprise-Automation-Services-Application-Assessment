@@ -26,7 +26,8 @@ def CountPostComments():
     PostCommentCount = [] #Initialise list to store number of comments for each post
     PostIds = [] #Initialise list to store Ids of each post
     
-    #Iterate over each post to count and store number of comments for each post and respective post Id
+    #Iterate over each post to count and store number of comments for each post
+    #and respective post Id
     for Post in Posts:
         PostIds.append(Post['id'])
         PostCommentCount.append(CommentPostIds.count(Post['id']))
@@ -39,7 +40,8 @@ def CountPostComments():
 
 
 def SavePostsByUsersInApertments():
-    #This function creates a text file containing all of the posts written by users who live in apartments.
+    #This function creates a text file containing all of the posts written by 
+    #users who live in apartments.
     
     #Import post and user data from the JSONPlaceholder API
     response = requests.get('https://jsonplaceholder.typicode.com/posts')
@@ -123,4 +125,3 @@ def ListPopularWords():
     #Displat word frequency data in a table in the console
     print(tb.tabulate(SortedWords.items(), headers = ['Word', 'No. Of Uses'], tablefmt = 'fancy_grid'))
     
-ListPopularWords()
