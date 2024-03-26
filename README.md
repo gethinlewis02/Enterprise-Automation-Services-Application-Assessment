@@ -12,7 +12,7 @@ In line 17 we begin a loop to iterate over each dictionary in the _UserData_ Lis
 
 Finally we display our data in the console in the form of a _tabulate_ table. The _tabulate_ module allows for easy display of plain text tables using only a single function call, handling column alignment automatically. In line 25 we call the _print()_ function to display text in the console. Within this function we call the _.tbulate()_ function from the _tabulate module_, providing the UserData list of dictionaries as our 2-dimensional data structure to be displayed and specifying that the keys of the dictionaries should be used as the table headers by setting the parameter _headers = 'keys'_. The asthetic choice to use the _'fancy_grid'_ format for our table was made as a personal preference, specified using the _tablefmt_ parameter. The table produced as a result of calling the _DisplayUserData()_ is shown in the GIF below.
 
-![](https://github.com/gethinlewis02/Enterprise-Automation-Services-Application-Assessment/blob/main/EATask1.gif)
+![](https://github.com/gethinlewis02/Enterprise-Automation-Services-Application-Assessment/blob/main/EASTask1.gif)
 
 ## Task 2: Data Storage
 ### Objective:
