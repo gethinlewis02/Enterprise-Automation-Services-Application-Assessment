@@ -68,4 +68,4 @@ In lines 111 and 112 we convert our filtered tokenized word list into a list of 
 
 We now create a dictionary in line 115 to store each of our lemmatized words and the number of times that word appears in the _LemmatizedWords_ list. In line 116 we create a new dictionary which has been reordered in descending order of word popularity. The python _sort()_ function is used which sorts an iterable item, the _key_ parameter allows a function to be specified to decide the order of items, here we have provided a lambda function which specifies that our dictionary should be sorted by its values rather than by its keys, given by the index 1 when each dictionary entry is converted to a list by the _.items()_ modifier. We also use the _reverse = true_ parameter to specify that we want the data in descending order.
 
-Lines 119 to 126 store and print the data as we have done before, saving the data in the text file _WordFrequency.txt_ and displaying it in the _tabulate_ table shown in the GIF below. 
+Lines 119 to 126 store and print the data as we have done before, saving the data in the text file _WordFrequency.txt_ included in this repository. 
