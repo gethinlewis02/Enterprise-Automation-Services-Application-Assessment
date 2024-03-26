@@ -121,7 +121,3 @@ def ListPopularWords():
     #Save word frequency data in a text file called WordFrequency.txt in JSON format
     with open('WordFrequency.txt', 'w') as OutFile:
         OutFile.write(WordFrequencyJSON)
-    
-    #Displat word frequency data in a table in the console
-    print(tb.tabulate(SortedWords.items(), headers = ['Word', 'No. Of Uses'], tablefmt = 'fancy_grid'))
-    

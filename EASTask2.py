@@ -16,4 +16,3 @@ def StoreUserData():
     #Save JSONObject string as a text file called UserData.txt
     with open('UserData.txt', 'w') as OutFile:
         OutFile.write(JSONObject)
-        

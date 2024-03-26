@@ -22,6 +22,4 @@ def DisplayUserData():
         User.pop('company')
     
     #Use the tabulate module to display user data in a table in the console        
-    print(tb.tabulate(UserData, headers = 'keys', tablefmt = 'fancy_grid'))
-    
-        
+    print(tb.tabulate(UserData, headers = 'keys', tablefmt = 'fancy_grid'))     
